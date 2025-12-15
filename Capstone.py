@@ -116,7 +116,7 @@ def improved_profile(input_df):
 
 ## App UI 
 
-st.title("Estimated 10-Year Risk of Coronary Heart Disease (CHD)")
+st.title("Estimate Your 10-Year Risk of Coronary Heart Disease (CHD)")
 
 st.write("Input your information below then click the button at the bottom. This tool will estiamte your 10-year risk of cardiovascular disease")
 
