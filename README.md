@@ -49,5 +49,6 @@ The test AUC is on the weak side but somewhat acceptable. This is likely due to 
 The external AUC of .563 is weak and only slightly above random chance. This is likely due to the two datasets measuring different things. One assigns relative risk while the other tracks whether or not the patient actually got a CHD. Better validation would likley use more similar datasets; however, due to access of data this was not possible. 
 
 ### Link to 5-minute capstone video 
+https://github.com/mlamb13/Matthew_Lambalot_Data_Science_Capstone_Project/blob/main/Matthew_Lambalot_Capstone_Project.mkv
 
 
