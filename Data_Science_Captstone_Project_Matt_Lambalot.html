@@ -7569,7 +7569,7 @@ a.anchor-link {
 
 
 
-<span class="c1">## Model creation: simple linear regression model </span>
+<span class="c1">## Model creation: simple logistic regression model </span>
 
 <span class="n">model</span><span class="o">=</span> <span class="n">Pipeline</span><span class="p">(</span><span class="n">steps</span><span class="o">=</span><span class="p">[(</span><span class="s2">"preprocess"</span><span class="p">,</span> <span class="n">pre_pros</span><span class="p">),</span> <span class="p">(</span><span class="s2">"classifier"</span><span class="p">,</span> <span class="n">LogisticRegression</span><span class="p">(</span><span class="n">max_iter</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">solver</span><span class="o">=</span><span class="s2">"lbfgs"</span><span class="p">))])</span>
 
@@ -7629,9 +7629,6 @@ a.anchor-link {
 
 <span class="n">y_ext_prob</span><span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">X_ext</span><span class="p">)[:,</span><span class="mi">1</span><span class="p">]</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">"External positives:"</span><span class="p">,</span> <span class="n">y_ext</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"External negatives:"</span><span class="p">,</span> <span class="p">(</span><span class="n">y_ext</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Unique predicted risks:"</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">y_ext_prob</span><span class="p">)[:</span><span class="mi">10</span><span class="p">])</span>
 
 
 <span class="n">ext_auc</span><span class="o">=</span> <span class="n">roc_auc_score</span><span class="p">(</span><span class="n">y_ext</span><span class="p">,</span> <span class="n">y_ext_prob</span><span class="p">)</span>
@@ -7769,10 +7766,6 @@ Test AUC: 0.683
 9          17.91  
 
 [10 rows x 22 columns]
-External positives: 665
-External negatives: 722
-Unique predicted risks: [0.01017286 0.01197955 0.01201397 0.01265384 0.01313735 0.0132699
- 0.01450144 0.014509   0.01465439 0.01476389]
 External Validation AUC: 0.563
 </pre>
 </div>

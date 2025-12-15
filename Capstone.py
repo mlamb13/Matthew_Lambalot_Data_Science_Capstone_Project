@@ -154,7 +154,7 @@ input_df= pd.DataFrame([{
 }])
 
 
-## Linear Regression 
+## Regression 
 
 if st.button("Estiamte 10-Year CVD Risk"):
     predicted_risk= model.predict_proba(input_df)[:,1][0]
