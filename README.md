@@ -18,7 +18,7 @@ It then explains what that means, and gives you the biggest factor that you can 
 The factor contribution table shows what percent each of your factors plays into your total CVD risk to give a better idea of how they affect each other 
 
 ### Risk percentage histogram 
-This graph is simply used to show the how your risk factor compares to those within your age range (+/- 2 years)
+This graph is simply used to show how your risk factor compares to those within your age range (+/- 2 years)
 
 ### Risk vs age graph 
 This graph is another way to visualize how your CVD risk compares to the entire cohort to better contextualize what is normal 
